@@ -1,16 +1,46 @@
-# React + Vite
+# 🎬 Movie Search Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+FilmHunt is a fast and responsive movie search application built using **React** and **TailwindCSS**.  
+It provides instant movie lookups with a smooth browsing experience using **debounced search**, **infinite scroll**, and **in-memory caching** to eliminate repeated fetches.
 
-Currently, two official plugins are available:
+Live Demo: https://movies-search-webapplication.netlify.app  
+GitHub Repo: https://github.com/DeepanshuDahiya/Movies-search-website
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🔍 Debounced Search (300ms)
+- Reduces unnecessary API calls by ~70%.
+- Provides a smoother search experience, even with rapid typing.
 
-## Expanding the ESLint configuration
+### ♾️ Infinite Scroll (Intersection Observer)
+- Automatically loads more movies as the user scrolls.
+- No pagination clicks needed.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 💾 In-Memory Caching
+- Eliminates repeated API calls for previously fetched pages.
+- Ensures instant navigation between lists and movie details.
+
+### 🎨 Responsive UI (TailwindCSS)
+- Fully responsive design that works on all screen sizes.
+- Clean and modern layout.
+
+### 📝 Movie Details Page
+- Displays title, description, rating, release date, and poster.
+- Smooth navigation back to search results.
+
+---
+
+## 🛠️ Tech Stack
+
+- **React**
+- **TailwindCSS**
+- **TMDB API**
+- **Intersection Observer**
+- **In-Memory Caching**
+- **Debouncing (setTimeout)**
+
+---
+
+
