@@ -2,14 +2,7 @@ import { Link, useLocation } from "react-router";
 import Logo from "../assets/logo.png";
 import { useEffect } from "react";
 
-export default function Navbar({
-  query,
-  setQuery,
-  searchData,
-  setSearchData,
-  // searchPage,
-  // setSearchPage,
-}) {
+export default function Navbar({ query, setQuery, searchData, setSearchData }) {
   const { pathname } = useLocation();
 
   const options = {
@@ -34,15 +27,10 @@ export default function Navbar({
       .catch((err) => console.error(err));
   }
 
-  // useEffect(() => {
-  //   if (searchPage === 1) return;
-  //   fetchSearch();
-  // }, [searchPage]);
-
   useEffect(() => {
     const timer = setTimeout(() => {
       fetchSearch();
-    }, 400);
+    }, 300);
 
     return () => {
       clearTimeout(timer);
